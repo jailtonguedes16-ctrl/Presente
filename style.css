@@ -157,10 +157,7 @@ header nav a:hover{
 }
 
 .inicio button:hover{
-  transform:scale(1.08);
-
   background:rgba(168,85,247,.25);
-
   box-shadow:
     0 0 10px #c084fc,
     0 0 25px #9333ea,
