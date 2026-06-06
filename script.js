@@ -99,7 +99,7 @@ const playlist = [
 {
     title: "Golden Hour",
     cover: "audio/icon/4.jpeg",
-    src: "audio/Golden-Hour.mp3"
+    src: "audio/golden-hour.mp3"
 },
 
 {
