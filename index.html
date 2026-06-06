@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Presente</title>
-
-    <!-- icone do site -->
+  
+  <!-- icone do site -->
   <link rel="icon" type="image/x-icon" href="icon.png">
 
   <!-- Google Icons -->
@@ -28,7 +28,6 @@
 </head>
 
 <body id="front">
-  <audio autoplay src="amar-como-vc.mp3"></audio>
   <!-- HEADER -->
   <header>
     <nav>
@@ -36,6 +35,7 @@
       <a href="#linha-do-tempo">Nossa história</a>
       <a href="#galeria">Galeria</a>
       <a href="#cart">Carta</a>
+      <a href="#play">Playlist</a>
     </nav>
   </header>
 
@@ -171,22 +171,22 @@
     <section class="galery-container">
       <h1 >Nossa galeria</h1>
       <div class="galery">
-        <img src="/img/1.jpg" alt="">
-        <img src="/img/2.jpg" alt="">
-        <img src="/img/3.jpg" alt="">
-        <img src="/img/4.jpg" alt="">
-        <img src="/img/5.jpg" alt="">
-        <img src="/img/6.jpg" alt="">
-        <img src="/img/7.jpg" alt="">
-        <img src="/img/8.jpg" alt="">
-        <img src="/img/9.jpg" alt="">
-        <img src="/img/10.jpg" alt="">
-        <img src="/img/11.jpg" alt="">
-        <img src="/img/12.jpg" alt="">
-        <img src="/img/13.jpg" alt="">
-        <img src="/img/14.jpg" alt="">
-        <img src="/img/15.jpg" alt="">
-        <img src="/img/16.jpg" alt="">
+        <img src="img/1.jpg" alt="">
+        <img src="img/2.jpg" alt="">
+        <img src="img/3.jpg" alt="">
+        <img src="img/4.jpg" alt="">
+        <img src="img/5.jpg" alt="">
+        <img src="img/6.jpg" alt="">
+        <img src="img/7.jpg" alt="">
+        <img src="img/8.jpg" alt="">
+        <img src="img/9.jpg" alt="">
+        <img src="img/10.jpg" alt="">
+        <img src="img/11.jpg" alt="">
+        <img src="img/12.jpg" alt="">
+        <img src="img/13.jpg" alt="">
+        <img src="img/14.jpg" alt="">
+        <img src="img/15.jpg" alt="">
+        <img src="img/16.jpg" alt="">
       </div>
       
       <div id="cart"></div>
@@ -201,11 +201,109 @@
         <p>
           Quando eu escolhi você, eu não escolhi por causa de segundas intenções, e nem por interesses. Eu escolhi você pois eu vi em seu olhos que você poderia me fazer feliz algum dia, e bem, ultimamente eu estou tendo uma felicidade ao seu lado que eu não consigo explicar, é um sentimento muito complexo para ser ditos por palavras, mas confesso que esse sentimento me faz sentir o que é ter uma felicidade verdadeira. Eu agradeço a Deus todos os dias por ter botado esse anjo em minha vida , e cara, ter você ultimamente está sendo tão bom, que até chega a me deixar de coração quentinho, você é a pessoa mais importante da minha vida, e sempre será independente de tudo na nassa vida, e que no futuro nos tenhamos uma vida que sempre sonhamos em ter. Eu quero que você saiba que o meu amor por você vai além de qualquer coisa existente nesse mundo ou em qualquer galáxia nesse imenso universo. Eu te amo para toda a minha vida, você sempre vai ser a razão da minha felicidade, e sempre vai está guardada no eu coração.</p>
       </div>
-
-      <audio controls autoplay loop src="amar-como-vc.mp3">
-    	  <source src="amar-como-vc.mp3" type="audio/mpeg">
-    	</audio>
+      <div id"play"></div>
     </section>
+    
+      <!-- PLAYLIST -->
+      <section class="playlist-container">
+        <h1>Playlist</h1>
+        
+        <div class="box">
+          <h3>Meu amor em forma de musica</h3>
+          <h2>Musicas que me fazem lembrar de ti</h2>
+          <div class="playlist-player">
+      
+            <img id="cover" src="capa1.jpg" alt="Capa">
+          
+            <div class="player-info">
+                <h3 id="title">Amar Como Você</h3>
+          
+                <input
+                    type="range"
+                    id="progress"
+                    value="0"
+                    min="0"
+                    max="100"
+                >
+            </div>
+          
+            <div class="player-buttons">
+                <button id="prev">⏮</button>
+                <button id="play">▶︎︎︎</button>          
+                <button id="next">⏭</button>
+            </div>
+          </div>
+    
+          <div class="playlist">
+              <div class="music-item" data-index="0">
+                  🎵 Take On Me
+                  <p>A-Ha</p>
+              </div>
+          
+              <div class="music-item" data-index="1">
+                  🎵 On Melancholy Hill
+                  <p>Gorillaz</p>
+              </div>
+          
+              <div class="music-item" data-index="2">
+                  🎵 Superpowers
+                  <p>Daniel Caesar</p>
+              </div>
+          
+              <div class="music-item" data-index="3">
+                  🎵 See You Again
+                  <p>Tyler, The Creator</p>
+              </div>
+              
+              <div class="music-item" data-index="4">
+                  🎵 Get You
+                  <p>Daniel Caesar</p>
+              </div>
+              
+              <div class="music-item" data-index="5">
+                  🎵 Front Desk
+                  <p>Hotel Ugly</p>
+              </div>
+          
+              <div class="music-item" data-index="6">
+                  🎵 Golden Hour
+                  <p>JVKE</p>
+              </div>
+          
+              <div class="music-item" data-index="7">
+                  🎵 I Wanna Be Yours
+                  <p>Arctic Monkeys</p>
+              </div>
+          
+              <div class="music-item active" data-index="8">
+                  🎵 Amar Como Você
+                  <p>Steven Universo</p>
+              </div>
+          
+              <div class="music-item" data-index="9">
+                  🎵 Just the Two of Us
+                  <p>Grover Washington</p>
+              </div>
+          
+              <div class="music-item" data-index="10">
+                  🎵 Tek It
+                  <p>Cafuné</p>
+              </div>
+          
+              <div class="music-item" data-index="11">
+                  🎵 This is what falling in love feels like
+                  <p>JVKE</p>
+              </div>
+          
+              <div class="music-item" data-index="12">
+                  🎵 You Are My High
+                  <p>DJ Snake</p>
+              </div>
+          
+              <audio id="audio"></audio>
+          </div>
+        </div>
+      </section>
   </main>
 
   <!-- JS -->
