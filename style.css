@@ -194,13 +194,14 @@ header nav a:hover{
   padding:25px;
   border-radius:20px;
   color:white;
+  cursor: pointer;
   background:rgba(15,23,35,.45);
   border:1px solid #c084fc;
   backdrop-filter:blur(10px);
   box-shadow:
     0 0 5px #a855f7,
     0 0 15px rgba(168,85,247,.4);
-  transition:.3s ease;
+  transition:all 0.4s ease;
 }
 
 .box:hover{
@@ -225,7 +226,21 @@ header nav a:hover{
 
 .box p{
   line-height:1.7;
-  opacity:.9;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+
+    transition:
+        max-height .5s ease,
+        opacity .4s ease,
+        transform .35s ease;
+}
+
+.box.aberta p {
+    max-height: 2000px;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ========== COTAINER DA GALERIA ========== */
@@ -275,7 +290,7 @@ header nav a:hover{
   box-shadow:
     0 0 5px #a855f7,
     0 0 15px rgba(168,85,247,.4);
-  transition:.3s ease;
+  transition:all 0.4s ease;
 }
 
 .galery img:hover{
