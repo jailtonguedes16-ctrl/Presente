@@ -254,3 +254,27 @@ items.forEach(item=>{
     });
 
 });
+
+/* ABRIR E FECHAR PARAGRAFO BOX */
+const cards = document.querySelectorAll(".box");
+
+cards.forEach(card => {
+    card.addEventListener("click", (e) => {
+        e.stopPropagation();
+
+        const estavaAberto = card.classList.contains("aberta");
+
+        // Fecha todos
+        cards.forEach(c => c.classList.remove("aberta"));
+
+        // Abre apenas o clicado
+        if (!estavaAberto) {
+            card.classList.add("aberta");
+        }
+    });
+});
+
+// Fecha todos ao clicar fora
+document.addEventListener("click", () => {
+    cards.forEach(card => card.classList.remove("aberta"));
+});
